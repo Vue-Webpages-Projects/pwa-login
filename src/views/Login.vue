@@ -1,19 +1,18 @@
 <template>
-    <b-container fluid>
-        <b-row align-v="center" align-h="center" style="height: 100vh">
+    <b-container fluid >
+        <b-row align-v="center" align-h="center" style="height: 100vh" >
             <b-col sm="12" md="3" class="login">
                 <h1 class="text-center">Login</h1>
 
-                <b-form v-if="show">
+                <b-form v-if="show" @submit="onSubmit">
                     <b-form-group
                         id="emailLogin"
                         label-for="email"
-                        description="ex. email@email.com"
                         >
                         <b-form-input
                             id="email"
-                            v-model="login.email"
-                            type="email"
+                            v-model="login.username"
+                            type="text"
                             required
                             placeholder="Login or email"
                             ></b-form-input>
@@ -34,7 +33,7 @@
 
                     
                     <div class="text-center">
-                        <b-button class="btn-block" style="margin-bottom: 10px">Login</b-button>
+                        <b-button type="submit" class="btn-block" variant="primary" style="margin-bottom: 10px">Login</b-button>
                         <router-link to="register">register</router-link>
                     </div>
                     
@@ -50,10 +49,15 @@ export default {
     data() {
         return {
             login: {
-                email: '',
+                username: '',
                 password: ''
             },
             show: true
+        }
+    },
+    methods: {
+        onSubmit() {
+            this.$router.push("/home")
         }
     }
 }
@@ -62,6 +66,7 @@ export default {
 <style scoped>
 .login {
     padding: 20px;
+    margin: 20px;
     background-color: aliceblue;
     border-radius: 10px;
 }
