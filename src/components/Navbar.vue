@@ -3,16 +3,20 @@
     <b-navbar type="dark" variant="dark" fixed="bottom" style="justify-content: center;">
         <b-navbar-nav >
 
-            <router-link to="/">
-                <b-nav-item href="/"><i class="fas fa-home" style="font-size: 25px; margin: auto 25px"></i>asdasdasd</b-nav-item>
+            <router-link to="/home">
+                <b-nav-item href="/home"><i class="fas fa-home" style="font-size: 25px; margin: auto 20px"></i></b-nav-item>
             </router-link>
 
             <router-link to="/index">
-                <b-nav-item href="/index"><i class="fas fa-user" style="font-size: 25px; margin: auto 25px"></i>asdasdasd</b-nav-item>
+                <b-nav-item href="/content"><i class="fab fa-buromobelexperte" style="font-size: 25px; margin: auto 20px"></i></b-nav-item>
             </router-link>
 
-            <router-link to="/a">
-                <b-nav-item href="/a"><i class="fas fa-envelope" style="font-size: 25px; margin: auto 25px"></i>asdasdas</b-nav-item>
+            <router-link to="/about">
+                <b-nav-item href="/about"><i class="fas fa-user" style="font-size: 25px; margin: auto 20px"></i></b-nav-item>
+            </router-link>
+
+            <router-link to="/contato">
+                <b-nav-item href="/contact"><i class="fas fa-envelope" style="font-size: 25px; margin: auto 20px"></i></b-nav-item>
             </router-link>
 
         </b-navbar-nav>
