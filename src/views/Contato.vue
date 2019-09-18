@@ -1,6 +1,6 @@
 <template>
-    <b-container fluid >
-        <b-row align-v="center" align-h="center" style="height: 100vh" >
+    <b-container fluid>
+        <b-row align-v="center" align-h="center" style="height: 100vh; padding-bottom: 50px" >
             <b-col sm="12" md="3" class="login">
                 <h1 class="text-center">
                     Contato
@@ -8,35 +8,50 @@
 
                 <b-form v-if="show" @submit="onSubmit">
                     <b-form-group
-                        id="emailLogin"
-                        label-for="email"
+                        label-for="name"
                         >
                         <b-form-input
-                            id="email"
-                            v-model="login.username"
+                            id="name"
+                            v-model="form.name"
                             type="text"
                             required
-                            placeholder="Login or email"
+                            placeholder="Name"
                             ></b-form-input>
                     </b-form-group>
 
                     <b-form-group
-                        id="passwordLogin"
-                        label-for="password"
+                        label-for="email"
                         >
                         <b-form-input
-                            id="password"
-                            v-model="login.password"
-                            type="password"
+                            id="email"
+                            v-model="form.email"
+                            type="email"
                             required
-                            placeholder="Password"
+                            placeholder="Email"
                             ></b-form-input>
                     </b-form-group>
 
+                    <b-form-textarea
+                    id="message"
+                    v-model="text"
+                    placeholder="Message"
+                    rows="3"
+                    ></b-form-textarea>
+
+                    <br>
+
+                    <b-form-textarea
+                    id="textarea"
+                    v-model="text"
+                    placeholder="Any suggestion?"
+                    rows="2"
+                    ></b-form-textarea>
+
+                    <br>
+
                     
                     <div class="text-center">
-                        <b-button type="submit" class="btn-block" variant="primary" style="margin-bottom: 10px">Login</b-button>
-                        <router-link to="register">register</router-link>
+                        <b-button type="submit" class="btn-block" variant="primary" style="margin-bottom: 10px">SEND</b-button>
                     </div>
                     
                 </b-form>
@@ -50,12 +65,14 @@
 <script>
 import Navbar from '../components/Navbar'
 export default {
-    name: 'Login',
+    name: 'Contato',
     data() {
         return {
-            login: {
-                username: '',
-                password: ''
+            form: {
+                name: '',
+                email: '',
+                message: '',
+                suggestion: ''
             },
             show: true
         }
@@ -73,9 +90,10 @@ export default {
 
 <style scoped>
 .login {
-    padding: 20px;
+    padding: 15px 20px;
     margin: 20px;
     background-color: aliceblue;
     border-radius: 10px;
 }
+
 </style>

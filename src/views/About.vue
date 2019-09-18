@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container style="min-height: 100vh">
+    <b-container style="min-height: 100vh; padding-bottom: 50px">
       <b-row align-h="center" class="text-center">
         <b-col sm="12">
           <h1>

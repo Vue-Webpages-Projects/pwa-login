@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="min-height: 100vh; padding-bottom: 50px">
     <navbar />
   </div>
 </template>
