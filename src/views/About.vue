@@ -8,8 +8,8 @@
           </h1>
         </b-col>
 
-        <b-col sm="12" md="4" style="padding: 30px 0">
-          <img src="@/assets/me.png" alt="me" width="100%">
+        <b-col cols="6" md="2" style="padding: 30px 0">
+          <img src="@/assets/me.png" alt="me" width="100%" style="border-radius:100%">
         </b-col>
 
         <b-col sm="12">

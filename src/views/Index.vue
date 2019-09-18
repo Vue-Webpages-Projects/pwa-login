@@ -35,24 +35,39 @@ export default {
       return {
           apps: [
               {
+                  id: 99,
+                  icon: 'fas fa-home icons',
+                  name: 'Home'
+              },
+              {
                   id: 1,
                   icon: 'fas fa-ghost icons',
-                  name: 'One'
+                  name: 'Ghost'
               },
               {
                   id: 2,
-                  icon: 'fas fa-home icons',
-                  name: 'Two'
+                  icon: 'fas fa-cogs icons',
+                  name: 'Settings'
               },
               {
                   id: 3,
                   icon: 'fab fa-github-square icons',
-                  name: 'Three'
+                  name: 'Github'
               },
               {
                   id: 4,
                   icon: 'fab fa-facebook-square icons',
-                  name: 'Four'
+                  name: 'Facebook'
+              },
+              {
+                  id: 5,
+                  icon: 'fas fa-beer icons',
+                  name: 'Beer'
+              },
+              {
+                  id: 6,
+                  icon: 'fas fa-bolt icons',
+                  name: 'Bolt'
               }
           ]
       }

@@ -3,9 +3,9 @@
     <b-navbar type="dark" variant="dark" fixed="bottom" style="justify-content: center;">
         <b-navbar-nav >
 
-            <router-link to="/home">
+            <!-- <router-link to="/home">
                 <b-nav-item href="/home"><i class="fas fa-home" style="font-size: 25px; margin: auto 20px"></i></b-nav-item>
-            </router-link>
+            </router-link> -->
 
             <router-link to="/index">
                 <b-nav-item href="/content"><i class="fab fa-buromobelexperte" style="font-size: 25px; margin: auto 20px"></i></b-nav-item>
